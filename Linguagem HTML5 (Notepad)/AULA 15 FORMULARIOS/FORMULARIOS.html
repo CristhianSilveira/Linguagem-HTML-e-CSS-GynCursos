@@ -1,0 +1,114 @@
+<DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<title>Formulários</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<form id="form-cadastro" method="POST" enctype="application/xz-www-form-urlencoded" name="formulario-cadastro">
+
+<fieldset>
+<legend> Informações pessoais</legend>
+
+Nome:<br>
+<input type="text" name="nome" required autofocus ><br> <!-- Usar 'required' para tornar o campo obrigatorio para preenchimento e 
+                                                        'autofocus' para quando a pag carregar ir direto para o preenchimento do campo -->
+Senha:<br>
+<input type="password" name="senha" required maxlength="10"><br> <!-- Usar 'maxlenght' para atribuir o maximo de caracteres na linhas e
+                                                                  'autocomplete para adicionar automaticamente os caracteres usa-se 'on ou off' e
+																  'placeholder' para colocar em cinza o que deve ser escrito no campo 
+																  'rows'quantidade de linhas a ser exibida e
+																  'cols' quantidade de colunas a ser exibida e
+																  'spellcheck' verifica se a ortografia esta correta-->
+Email:<br>
+<input type="email" name="email" required autocomplete="on" placeholder="seuemail@gmail.com"><br>
+
+Telefone:<br>
+<input type="tel" name="telefone"><br><br>
+
+Data:<br>
+<input type="date" name="data" min="1950-12-31" max="2004-12-31"><br><br>
+
+Hora:<br>
+<input type="time" name="hora"><br><br>
+
+Mês e Ano:<br>
+<input type="month" name="mes-ano"><br><br>
+
+Semana:<br>
+<input type="week" name="semana"><br><br>
+
+Data e Hora:<br>
+<input type="datetime-local" name="data-e-hora"><br><br>
+
+Escolha seu veículo:<br> <!-- Usado para determinar um grupo e opçoes selecionaveis com o mouse -->
+<select name="veiculo">
+ <optgroup label="Carros">
+  <option value="camaro">Camaro </option>
+  <option value="hilux">Hilux </option>
+ </optgroup>
+ 
+ <optgroup label="Motos">
+  <option value="pop100"> Pop 100 </option>
+  <option value="zig-50">Zig-50 </option>
+ </optgroup>
+</select><br><br>
+
+Escolha um curso:<br> <!-- Usado para determinar alguma opção selecionavel com ou mouse ou pesquisado no campo -->
+
+<input name="cursos" list="lista-cursos">
+
+ <datalist id="lista-cursos">
+   <option value="HTML5">
+   <option value="CSS3">
+   <option value="PHP">
+  </datalist> <br><br>
+
+Mensagem:<br>
+<textarea name="mensagem" rows="5" cols="30"> </textarea><br><br>
+<button type="button">Clique aqui</button><br><br>
+
+<br>URL:<br>
+<input type="url" name="site"><br>
+
+<br>Search:<br>
+<input type="search" name="pesquisa"><br>
+
+<br>Imagem:<br>
+<input type="file" name="imagem"><br><br>
+
+Sexo:<br> <!-- Usar 'radio' para colocar uma caixa para marcar somente uma opçao dentre outras. -->
+
+<input type="radio" name="sexo" value="masculino"> Masculino<br>
+<input type="radio" name="sexo" value="feminino"> Ferminino<br>
+
+<br>Cores:<br> <!-- Usar 'checkbox' para coloocar uma caixa para marcar varias opçoes dentre outras. -->
+
+<input type="checkbox" name="cores" value="verde">Verde<br>
+<input type="checkbox" name="cores" value="vermelho">Vermelho<br>
+<input type="checkbox" name="cores" value="azul">Azul<br>
+<input type="checkbox" name="cores" value="amarelo">Amarelo<br><br>
+
+Quantidade:<br>
+<input type="number" name="quantidade" min="0" max="500" step="10"> <!-- Usar 'min e max para determinar o maximo e minimo valor a selecionar e 
+                                                                    'step' para determinar o intervalo de valores e
+                                                                    'range' para adicionar uma barra de rolagem e
+																	'color' para selecionar uma cor -->
+<br><br>
+<input type="range" name="quantidade"><br><br>
+
+Cor:<br>
+<input type="color" name="cor"><br><br>
+
+<input type="submit" name="entrar" formenctype="application/x-www-form-urlencoded" formmethod="POST" formaction="entrar.php" value="Entrar"> 
+<input type="submit" name="cadastrar" formenctype="application/x-www-form-urlencoded" formmethod="POST" formaction="cadastrar.php" value="Cadastrar" formnovalidate>
+</fieldset>
+
+</form>
+
+</body>
+
+</html>

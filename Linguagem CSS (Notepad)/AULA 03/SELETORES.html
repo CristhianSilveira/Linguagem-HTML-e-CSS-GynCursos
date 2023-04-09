@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title> Seletores </title>
+<meta charset="utf-8">
+
+               <!--Tipos de seletores: OBS: height= tamanho, border= borda, width= largura, margin= margem, padding= preenchimento.
+			   1) Seletor universal: aplica a todos os texto do projeto Usar ' *{propriedade:valor;}'
+			   2) Seletor Atributo: aplicado ao tipo do input ' input[type="text"]{background-color:#ccc} '
+			   3) Seletor tipo: declarar o tipo da tag ' h1{color:blue;font-size:50px;}'
+			   -->
+
+<style>
+h1{color:blue;font-size:50px;}
+p{color:green; font-size:15px;}
+form {color:purple;}
+
+input[type="text"]{width:200px;background-color:#ccc; height:30px; border:none;}
+input[type="email"]{width:200px;background-color:#ccc; height:30px; border:none;}
+
+*{margin:0; padding:0;}
+</style>
+
+</head>
+
+<body>
+
+<h1> Olá Mundo </h1>
+<p> Paragrafo </p><br>
+
+<form>
+Nome:<br>
+<input type="text" name="nome"><br>
+Email:<br>
+<input type="email" name="email"><br><br>
+<input type="submit" value="Enviar">
+</form>
+
+</body>
+
+</html>
