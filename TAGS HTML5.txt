@@ -3,6 +3,8 @@
 
         Olá, criei esse arquivo com as principais Tags HTML explicadas e com exemplos, no final do arquivo contem o resumo das tags.
 
+                OBS: os exemplos não estão formatados para não ocupar muitas linhas do arquivo.
+
 
 1- Noções básicas:
 
